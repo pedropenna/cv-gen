@@ -7,6 +7,13 @@
     linkedIn: 'https://www.linkedin.com/in/pedropenna',
     phone: '+55 31 9-9279-6486',
 
+    certifications: [
+      'Core Spring 3 Certification',
+      'Sun Certified Enterprise Architect',
+      'Sun Certified Business Component Developer',
+      'Sun Certified Web Component Developer',
+      'Sun Certified Java Programmer'
+    ],
     education: [
       {
         degree: 'Bachelor\'s degree in Computer Science',
@@ -43,29 +50,41 @@
   document.getElementById("linkedIn").href = data.linkedIn;
   document.getElementById("phone").innerHTML = data.phone;
 
+  let certifications = data.certifications
+      .map((certification) => createSimpleItemList(certification))
+      .map((item) => {
+        document.getElementById("certifications").appendChild(item);
+      });
+
   let education = data.education
-      .map(({degree, location}) => nameDescriptionItemList(degree, location))
+      .map(({degree, location}) => createNameDescriptionItemList(degree, location))
       .map((item) => {
         document.getElementById("education").appendChild(item);
       });
 
   let languages = data.languages
-      .map(({name, level}) => nameDescriptionItemList(name, level))
+      .map(({name, level}) => createNameDescriptionItemList(name, level))
       .map((item) => {
            document.getElementById("languages").appendChild(item);
       });
 
-  function separator() {
+  function createSeparator() {
     let span = document.createElement('span');
     span.className = 'separador';
     span.innerHTML = '&mdash;';
     return span;
   }
 
-  function nameDescriptionItemList(name, description) {
+  function createNameDescriptionItemList(name, description) {
     let list = document.createElement('li');
     list.appendChild(document.createTextNode(name));
-    list.appendChild(separator());
+    list.appendChild(createSeparator());
+    list.appendChild(document.createTextNode(description));
+    return list;
+  }
+
+  function createSimpleItemList(description) {
+    let list = document.createElement('li');
     list.appendChild(document.createTextNode(description));
     return list;
   }
