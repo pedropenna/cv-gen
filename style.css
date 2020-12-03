@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body, div, td, span, table, tr, p, a {
+  font-size: 14px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  word-spacing: 0.07em;
+  color: #3D3D3D;
+}
+
+.textoCabecalho {
+  color: #666;
+}
+
+.subtitulo {
+  margin: 16px 0 5px 0;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.separador {
+  color: #ddd;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.data {
+  color: #888;
+}
+
+.certificacoes {
+  text-align: left;
+  width: 1%;
+  padding: 0 20px 0 0;
+  vertical-align: top;
+}
+
+.tabelaCabecalho {
+  margin-bottom: 20px;
+}
+
+.cabecalhoEsquerda {
+  text-align: left;
+  width: 26%;
+}
+
+.cabecalhoCentro {
+  text-align: center;
+}
+
+.cabecalhoDireita {
+  text-align: right;
+  width: 30%;
+  vertical-align: top;
+}
+
+.experienciaEsquerda {
+  font-weight: bold;
+  width: 33.3%;
+}
+
+.experienciaCentro {
+  font-weight: bold;
+  text-align: center;
+  width: 33.3%;
+}
+
+.experienciaDireita {
+  font-weight: bold;
+  text-align: right;
+  width: 33.3%;
+}
+
+.experienciaDetalhe {
+  padding: 0 0 14px 11px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 25px;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: square;
+}
+
+.idiomas {
+  padding-top: 3px;
+  padding-left: 25px;
+}
+
+.cap {
+  font-size: 16px;
+  color: inherit;
+}
+
+.nome {
+  font-size: 22px;
+}
+
+.capNome {
+  font-size: 24px;
+}
