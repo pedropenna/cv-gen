@@ -80,6 +80,10 @@ body, div, td, span, table, tr, p, a {
   padding: 0 0 14px 11px;
 }
 
+tr {
+  page-break-inside: avoid;
+}
+
 ul {
   margin: 0;
   padding-left: 25px;
@@ -89,6 +93,9 @@ li {
   margin: 0;
   padding: 0;
   list-style-type: square;
+}
+
+#certifications li, #education li {
   white-space: nowrap;
 }
 
