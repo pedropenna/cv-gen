@@ -14,8 +14,11 @@
       });
   console.log('nameHtml', nameHtml);
 
-  document.getElementsByClassName("nome")[0].innerHTML = '<span class="capNome">P</span>EDRO <span class="capNome">L</span>UIZ  <span class="capNome">L</span>UIZ  <span class="capNome">L</span>UIZ <span class="capNome">M</span>OREIRA <span class="capNome">P</span>ENNA';
-  document.getElementsByClassName("nome")[0].innerHTML = nameHtml;
+  document.getElementById("name").innerHTML = nameHtml;
+  document.getElementById("email").innerText = data.email;
+  document.getElementById("linkedIn").innerHTML = data.linkedIn;
+  document.getElementById("linkedIn").href = data.linkedIn;
+  document.getElementById("phone").innerHTML = data.phone;
 
 
 })();
