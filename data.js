@@ -100,6 +100,16 @@ let data = {
       role: 'Front-End/Web Developer',
       activity: 'Development of multiple web applications',
       tech: 'Java, JSP/Servlet, Struts, HTML, JavaScript, Eclipse, ASP, Delphi, Oracle, JBuilder, JBoss and Websphere',
+    },
+    {
+      internship: true,
+      startMonth: 3,
+      startYear: 2001,
+      endMonth: 12,
+      endYear: 2001,
+      role: 'Software Developer (Internship)',
+      activity: 'Development of several web applications',
+      tech: 'PHP, Delphi, Visual Basic, Embedded Visual Basic, HTML, CSS, JavaScript, PostgreSQL, MySQL and SQL Server',
     }
   ],
 

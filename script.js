@@ -22,7 +22,11 @@
         var row = document.createElement("tr");
         var cell = document.createElement("td");
         cell.className = 'experienciaDetalhe';
-        cell.appendChild(createSpan('Company: ' + experience.company, 'company'));
+        if (experience.internship) {
+          cell.appendChild(createSpan('Internship in multiple companies', 'company'));
+        } else {
+          cell.appendChild(createSpan('Company: ' + experience.company, 'company'));
+        }
         cell.appendChild(createSpan(' ', ''));
         cell.appendChild(createSeparator());
         cell.appendChild(createSpan(' ', ''));
@@ -110,7 +114,7 @@
       fullDescription = 'Since ' + start;
     }
 
-    return createSpan(fullDescription, 'resume');
+    return createSpan(fullDescription, 'data');
   }
 
   function createList(listItems) {
