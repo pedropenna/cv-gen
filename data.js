@@ -14,7 +14,7 @@ let data = {
       startYear: 2017,
       role: 'Senior Consultant Developer',
       activity: 'Worked on the development of multiple microservices for a large airline company',
-      tech: 'Java, JavaScript, Spring Boot, Splunk, Jenkins, OWASP Zed Attack Proxy, OWASP Dependency Check, PiTest, Sonar, Intellij, Agile Software Development, Git, JUnit and Hamcrest',
+      tech: 'Java, JavaScript, Spring Boot, Splunk, Jenkins, OWASP Zed Attack Proxy, OWASP Dependency Check, PiTest, Sonar, Intellij, Git, JUnit and Hamcrest',
       methodology: 'Agile, Kanban, Continuous Integration and Test-Driven Development',
     },
     {
