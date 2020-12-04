@@ -3,13 +3,7 @@
 
   let resume = data || {};
 
-  let nameHtml = resume.name
-      .toUpperCase()
-      .split(' ')
-      .map((word) => {
-        return '<span class="capNome">' + word.substring(0, 1) + '</span>' + word.substring(1);
-      })
-      .join(' ');
+  let nameHtml = createCapitalizedTitle(resume.name.toUpperCase());
 
   document.getElementById("name").innerHTML = nameHtml;
   document.getElementById("email").innerText = resume.email;
@@ -59,6 +53,16 @@
     span.className = 'separador';
     span.innerHTML = '&mdash;';
     return span;
+  }
+
+  function createCapitalizedTitle(originalText) {
+    return originalText.split(' ')
+        .map(createCapitalizedWord)
+        .join(' ');
+  }
+
+  function createCapitalizedWord(word) {
+    return '<span class="capNome">' + word.substring(0, 1) + '</span>' + word.substring(1);
   }
 
   function createNameDescriptionItemList(name, description) {
