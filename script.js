@@ -3,9 +3,12 @@
 
   let resume = data || {};
 
-  let nameHtml = createCapitalizedTitle(resume.name.toUpperCase());
+  document.getElementById('professionalExperienceTitle').innerHTML = createCapitalizedSentence('Professional Experience');
+  document.getElementById('educationTitle').innerHTML = createCapitalizedSentence('Education');
+  document.getElementById('certificationsTitle').innerHTML = createCapitalizedSentence('Certifications');
+  document.getElementById('languagesTitle').innerHTML = createCapitalizedSentence('Languages');
 
-  document.getElementById("name").innerHTML = nameHtml;
+  document.getElementById("name").innerHTML = createCapitalizedSentence(resume.name);
   document.getElementById("email").innerText = resume.email;
   document.getElementById("linkedIn").innerHTML = resume.linkedIn;
   document.getElementById("linkedIn").href = resume.linkedIn;
@@ -55,14 +58,15 @@
     return span;
   }
 
-  function createCapitalizedTitle(originalText) {
-    return originalText.split(' ')
+  function createCapitalizedSentence(originalText) {
+    return originalText.toUpperCase()
+        .split(' ')
         .map(createCapitalizedWord)
         .join(' ');
   }
 
   function createCapitalizedWord(word) {
-    return '<span class="capNome">' + word.substring(0, 1) + '</span>' + word.substring(1);
+    return '<span class="cap">' + word.substring(0, 1) + '</span>' + word.substring(1);
   }
 
   function createNameDescriptionItemList(name, description) {

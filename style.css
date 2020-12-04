@@ -105,16 +105,12 @@ li {
 }
 
 .cap {
-  font-size: 16px;
+  font-size: 1.2em;
   color: inherit;
 }
 
 .nome {
   font-size: 22px;
-}
-
-.capNome {
-  font-size: 24px;
 }
 
 .contactInfo {
